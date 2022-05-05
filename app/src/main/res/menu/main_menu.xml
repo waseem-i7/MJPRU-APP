@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+       <!-- <item
+            android:id="@+id/nav_search"
+            android:title="@string/search"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+        <item
+            android:id="@+id/nav_all_categories"
+            android:title="@string/all_categories"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+        <item
+            android:id="@+id/nav_add_missing_place"
+            android:title="@string/add_missing_place"
+            android:icon="@drawable/ic_baseline_home_24"/> -->
+    </group>
+
+
+    <item
+        android:title="Examination">
+
+        <menu>
+            <group
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_online_examination"
+                    android:title="Online Examination"
+                    />
+
+                <item
+                    android:id="@+id/nav_entrance_examination"
+                    android:title="Entrance Examination"
+                    />
+
+                <item
+                    android:id="@+id/nav_exam_notice"
+                    android:title="Exam Notice"
+                    />
+
+                <item
+                    android:id="@+id/nav_exam_scheme"
+                    android:title="Exam Scheme"
+                    />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Other">
+
+        <menu>
+            <group
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_under_graduate_form"
+                    android:title="Gallery"
+                    />
+
+                <item
+                    android:id="@+id/nav_post_graduate_form"
+                    android:title="Media Cell"
+                    />
+
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Share">
+
+        <menu>
+            <group>
+
+                <item
+                    android:id="@+id/share_app"
+                    android:title="@string/share_app"
+                    />
+
+                <item
+                    android:id="@+id/rate_us"
+                    android:title="@string/rate_us"
+                    />
+
+            </group>
+        </menu>
+    </item>
+</menu>
+
+
+
+
+
+
+

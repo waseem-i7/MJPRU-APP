@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.wizion.mjpru">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mjpru">
+        <activity
+            android:name=".user.UserDashboardActivities.DeleteNotice"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserDashboardActivities.faculty.UpdateFaculty"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserDashboardActivities.UploadEbook"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserDashboardActivities.UploadImage"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserDashboardActivities.UploadNotice"
+            android:exported="false" />
+        <activity
+            android:name=".navigationitems.ExamScheme"
+            android:exported="false" />
+        <activity
+            android:name=".navigationitems.ExamNotice"
+            android:exported="false" />
+        <activity
+            android:name=".navigationitems.EntranceExamination"
+            android:exported="false" />
+        <activity
+            android:name=".navigationitems.OnlineExamination"
+            android:exported="false" />
+        <activity
+            android:name=".navigationitems.PostGraduateForm"
+            android:exported="false" />
+        <activity
+            android:name=".navigationitems.UnderGraduateForm"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.ForgetPasswordSuccessMessage"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.SetNewPassword"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.MakeSelection"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.VerifyOTP"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.Signup3rdClass"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.Signup2ndClass"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.Login"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginSignup.RetailerStartUpScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".common.OnBoarding"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".homeDashboard.UserDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
