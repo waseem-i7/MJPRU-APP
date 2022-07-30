@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".common.LoginSignup.SignUp"
+    tools:context=".LoginSignup.SignUp"
     android:background="@color/purple_500"
     android:transitionName="transition_signup"
     android:padding="30dp">

@@ -2,10 +2,11 @@ package `in`.wizion.mjpru.homeDashboard
 
 
 import `in`.wizion.mjpru.R
-import `in`.wizion.mjpru.common.LoginSignup.RetailerStartUpScreen
-import `in`.wizion.mjpru.common.SplashScreen
-import `in`.wizion.mjpru.helperClasses.homeAdapter.*
+import `in`.wizion.mjpru.LoginSignup.RetailerStartUpScreen
+import `in`.wizion.mjpru.common.SessionManager
+import `in`.wizion.mjpru.Adapters.homeAdapter.*
 import `in`.wizion.mjpru.navigationitems.*
+import `in`.wizion.mjpru.admin.AdminDashboard
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -23,12 +24,14 @@ import android.net.NetworkInfo
 import android.provider.Settings
 import android.view.MenuItem
 import android.view.View
+import android.webkit.WebViewClient
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.activity_online_examination.webView
 
 
 class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -48,7 +51,7 @@ class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelect
     private lateinit var menuIcon : ImageView
     private lateinit var contentView : LinearLayout
     companion object{
-        const val  END_SCALE = 0.7f
+       const val  END_SCALE = 0.7f
     }
 
 
@@ -65,9 +68,9 @@ class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
 
         //Hooks
-        featuredRecycler =findViewById(R.id.featured_recycler)
-        categoriesRecyclerView=findViewById(R.id.categories_recycler_view)
-        mostViewedRecyclerView=findViewById(R.id.most_viewed_Recycler_view)
+//        featuredRecycler =findViewById(R.id.featured_recycler)
+//        categoriesRecyclerView=findViewById(R.id.categories_recycler_view)
+//        mostViewedRecyclerView=findViewById(R.id.most_viewed_Recycler_view)
 
         //Menu Hooks
         drawerLayout = findViewById(R.id.drawer_layout)
@@ -85,9 +88,15 @@ class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         navigationDrawer()
 
         //Recycler View Function calls
-        featuredRecycler()
-        mostViewedRecycler()
-        categoriesRecycler()
+//        featuredRecycler()
+//        mostViewedRecycler()
+//        categoriesRecycler()
+
+        //Web View
+        val webSetting=webView.settings
+        webSetting.javaScriptEnabled=true
+        webView.loadUrl("https://www.mjpru.ac.in")
+        webView.webViewClient= WebViewClient()
 
     }
 
@@ -118,7 +127,7 @@ class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         }
 
         adb.setNegativeButton("Cancel") { _, _ ->
-           startActivity(Intent(applicationContext,SplashScreen::class.java))
+           startActivity(Intent(applicationContext, SplashScreen::class.java))
             finish()
         }
 
@@ -163,7 +172,10 @@ class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         })
     }
     override fun onBackPressed() {
-        if (drawerLayout.isDrawerVisible(GravityCompat.START)){
+
+        if(webView.canGoBack()){
+            webView.goBack()
+        } else if (drawerLayout.isDrawerVisible(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
         }else{
             super.onBackPressed()
@@ -250,8 +262,14 @@ class UserDashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
     //Button Click
     public fun callRetailerScreen(view : View){
-        startActivity(Intent(this,RetailerStartUpScreen::class.java))
+        val sessionManager = SessionManager(this, SessionManager.SESSION_USERSESSION)
+        if (sessionManager.checkLogin()){
+           startActivity(Intent(this,AdminDashboard::class.java))
+        }else {
+            startActivity(Intent(this, RetailerStartUpScreen::class.java))
+        }
     }
+
 }
 
 

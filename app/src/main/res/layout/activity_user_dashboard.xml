@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".homeDashboard.UserDashboard"
-    android:id="@+id/drawer_layout">
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -51,7 +52,7 @@
                     android:src="@drawable/ic_baseline_add_24" />
             </RelativeLayout>
 
-            <ScrollView
+           <!-- <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -341,10 +342,19 @@
 
                 </LinearLayout>
 
-            </ScrollView>
+            </ScrollView>  -->
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-        </LinearLayout>
+    </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
 

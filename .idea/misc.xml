@@ -54,6 +54,21 @@
         <entry key="..\:/MyCollegeProject/app/src/main/res/layout/slides_layout.xml" value="0.22291666666666668" />
         <entry key="..\:/MyCollegeProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/MyCollegeProject/app/src/main/res/menu/main_menu.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2390625" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/drawable/image.xml" value="0.2390625" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_entrance_examination.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_online_examination.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_retailer_dashboard.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_retailer_login.xml" value="0.33" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_retailer_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_upload_ebook.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_upload_image.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_upload_notice.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_user_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/activity_verify_otp.xml" value="0.33" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/fragment_user_dashboard.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/layout/screen_splash.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/MOHAMMAD/AndroidStudioProjects/MJPRU/app/src/main/res/menu/main_menu.xml" value="0.22291666666666668" />
       </map>
     </option>
   </component>

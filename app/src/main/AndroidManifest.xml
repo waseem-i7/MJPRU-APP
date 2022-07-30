@@ -3,28 +3,29 @@
     package="in.wizion.mjpru">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/appicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/appicon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mjpru">
         <activity
-            android:name=".user.UserDashboardActivities.DeleteNotice"
+            android:name=".admin.AdminDashboardActivities.DeleteNotice"
             android:exported="false" />
         <activity
-            android:name=".user.UserDashboardActivities.faculty.UpdateFaculty"
+            android:name=".admin.AdminDashboardActivities.faculty.UpdateFaculty"
             android:exported="false" />
         <activity
-            android:name=".user.UserDashboardActivities.UploadEbook"
+            android:name=".admin.AdminDashboardActivities.UploadEbook"
             android:exported="false" />
         <activity
-            android:name=".user.UserDashboardActivities.UploadImage"
+            android:name=".admin.AdminDashboardActivities.UploadImage"
             android:exported="false" />
         <activity
-            android:name=".user.UserDashboardActivities.UploadNotice"
+            android:name=".admin.AdminDashboardActivities.UploadNotice"
             android:exported="false" />
         <activity
             android:name=".navigationitems.ExamScheme"
@@ -45,41 +46,41 @@
             android:name=".navigationitems.UnderGraduateForm"
             android:exported="false" />
         <activity
-            android:name=".user.UserDashboard"
+            android:name=".admin.AdminDashboard"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.ForgetPasswordSuccessMessage"
+            android:name="in.wizion.mjpru.LoginSignup.ForgetPasswordSuccessMessage"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.SetNewPassword"
+            android:name="in.wizion.mjpru.LoginSignup.SetNewPassword"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.MakeSelection"
+            android:name="in.wizion.mjpru.LoginSignup.MakeSelection"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.ForgetPassword"
+            android:name="in.wizion.mjpru.LoginSignup.ForgetPassword"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.VerifyOTP"
+            android:name="in.wizion.mjpru.LoginSignup.VerifyOTP"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.Signup3rdClass"
+            android:name="in.wizion.mjpru.LoginSignup.Signup3rdClass"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.Signup2ndClass"
+            android:name="in.wizion.mjpru.LoginSignup.Signup2ndClass"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.SignUp"
+            android:name="in.wizion.mjpru.LoginSignup.SignUp"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.Login"
+            android:name="in.wizion.mjpru.LoginSignup.Login"
             android:exported="false" />
         <activity
-            android:name=".common.LoginSignup.RetailerStartUpScreen"
+            android:name="in.wizion.mjpru.LoginSignup.RetailerStartUpScreen"
             android:exported="false" />
 
         <activity
-            android:name=".common.OnBoarding"
+            android:name=".homeDashboard.OnBoarding"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -87,7 +88,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".common.SplashScreen"
+            android:name=".homeDashboard.SplashScreen"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
